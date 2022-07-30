@@ -1,3 +1,4 @@
+import {add,greeting} from "./functions";
 
 let inputs:NodeListOf<HTMLInputElement> =document.querySelectorAll('input');
 
@@ -55,6 +56,9 @@ let programmers:{
 }[]=[]
 
 programmers.push({name:"Bhom",age:25,skills:['js','ty']})
+
+greeting("Fas my friend")
+console.log(add(21,2,23))
 
 
 

@@ -13,3 +13,9 @@ const add=(a:number,b:number,c:number=10):number=>{
 }
 
 console.log(add(34,34,-203))
+
+
+export {
+  greeting,
+    add
+}

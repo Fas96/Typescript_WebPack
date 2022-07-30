@@ -1,42 +1,9 @@
-// var path = require('path');
-//
-// module.exports = {
-//   mode: "development",
-//   entry: path.resolve(__dirname, 'src') + '/typescript/index.ts',
-//   output: {
-//     path: path.resolve(__dirname, 'public') ,
-//     filename: 'bundle.js',
-//     publicPath: '/public/'
-//   },
-//   module: {
-//     rules: [
-//       {
-//         test: /\.ts$/,
-//         use: 'ts-loader',
-//         include: [path.resolve(__dirname,'src')]
-//       }
-//     ],
-//     // loaders: [
-//     //   {
-//     //     test: /\.js$/,
-//     //     include: path.resolve(__dirname, 'src'),
-//     //     loader: 'babel-loader',
-//     //     query: {
-//     //       presets: ['react', 'es2015']
-//     //     }
-//     //   },
-//     //   {
-//     //     test: /\.css$/,
-//     //     loader: 'style-loader!css-loader'
-//     //   }
-//     // ]
-//   }
-// };
 
 const path = require('path')                                        // core nodejs 모듈 중 하나, 파일 경로 설정할 때 사용
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {                                      // moduel export (옛날 방식..)
+module.exports = {                                     // moduel export (옛날 방식..)
+  devtool: 'eval-source-map',
   mode: "none",
   entry: './src/typescript/index.ts',                            // 리액트 파일이 시작하는 곳
   output: {                                           // bundled compiled 파일
